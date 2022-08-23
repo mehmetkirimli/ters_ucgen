@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        int satir;
+
+        Scanner bjk = new Scanner(System.in);
+        System.out.print("Kac satir yildiz kumen olsun ? ");
+        satir = bjk.nextInt();
+
+        for (int i = 1; i <= satir; i++) {
+
+            for (int k = 1; k <= (i); k++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= (2 * (satir - i) + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
